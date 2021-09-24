@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px;
+  z-index: 3;
+  /* z-index 는 레이어 순서라고 생각하면 됨 */
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+}
+
+header img {
+  width: 120px;
+}
+a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav a {
+  color: #fff;
+  margin-left: 40px;
+}
+
+.main-nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid rgb(39, 17, 235);
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 24px;
+  background-color: rgb(39, 17, 235);
+}
+
+.ghost-btn {
+  background-color: transparent;
+  border: 1px solid rgb(39, 17, 235);
+}
+
+.text-wrap {
+  width: 520px;
+  height: 100vh;
+  padding: 240px 60px;
+  position: absolute;
+  right: 0;
+  background-color: #000;
+  z-index: 1;
+}
+
+.text-wrap h2 {
+  color: #fff;
+  font-size: 52px;
+  line-height: 80px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.text-wrap h3 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.text-wrap p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.sns-wrap {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  z-index: 3;
+}
+
+.sns-wrap a {
+  display: inline-block;
+  /* width: 20px;
+  height: 20px; */
+  font-size: 24px;
+  margin-left: 20px;
+  background-size: contain;
+  text-decoration: none;
+  color: #fff;
+}
+
+.video-wrap {
+  position: relative;
+  width: cal(100% - 2000px);
+}
+
+.video-wrap video {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+}
